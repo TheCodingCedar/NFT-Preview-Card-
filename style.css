@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.nft-image {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nft-image img {
+    width: 100%;
+    display: block;
+}
+
+.eye-view {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 01.125rem);
+    cursor: pointer;
+    display: none;
+}
+
+.eye-view img {
+    position: absolute;
+    width: 3.125rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nft-image:hover .eye-view {
+    display: block;
+    background-color: black;
+    opacity: 50%;
+}
+
+.text a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    padding: 20px 0;
+    display: inline-block
+}
+
+.text a:hover {
+    color: hsla(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+
+}
+
+.stats {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    padding-top: 1.875rem;
+}
+
+.small-eth,
+.days {
+    display: inline-block;
+}
+
+.days {
+    padding-left: 95px;
+}
+
+.small-eth p {
+    color: hsla(178, 100%, 50%);
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+.days p {
+    padding-left: 8px;
+}
+
+hr {
+    border-color: hsl(215, 51%, 70%);
+    margin-top: 20px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+}
+
+.creator img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid hsl(215, 51%, 70%);
+    margin-right: 0.6875rem;
+    margin-top: 0.5rem;
+}
+
+.creator-img {
+    display: flex;
+    justify-content: right;
+}
+
+.creator p a.name {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.creator p a.name:hover {
+    color: hsla(178, 100%, 50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: aqua;
+}
